@@ -1,12 +1,13 @@
 // import React from "react"; // webpack functionality, but JS commands
 // import ReactDOM from "react-dom";
 // need to wrap each react component in element tag
-function App() {
+
+function App(props) {
 	return (
 		<div> 
 			<h2>MovieList</h2>
 			<div className="movies">
-				"hello world"
+				<MovieList movies={props.movies} />
 			</div>
 		</div>
 	)
