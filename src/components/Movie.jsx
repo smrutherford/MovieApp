@@ -2,7 +2,7 @@ function Movie(props) {
   
   console.log(props)
   return(
-	  <ul>
+	  <ul className="movieTitle">
 	  	{props.movieTitle}
 	  </ul>  	
 	);  

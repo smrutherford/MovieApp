@@ -1,0 +1,29 @@
+body {
+	font-family: "Gotham", "Arial", sans-serif;
+	font-weight: lighter;
+	font-variant: small-caps;
+	display: flex;
+	justify-content: center;
+}
+
+h2 {
+	display: flex;
+	justify-content: center;
+}
+
+input {
+	border-radius: 5px;
+}
+
+#root {
+	padding: 50px;
+	border: 3px outset #CFC7D2;
+	border-radius: 10px;
+	background-color: #9AA0A8;
+}
+
+.movieTitle {
+	border: 2px #CFC7D2;
+	border-radius: 5px;
+	background-color: #F7FFF6;
+} 

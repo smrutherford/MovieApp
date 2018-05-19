@@ -8,6 +8,4 @@ function MovieList(props) {
 	);  
 
 } 
-
-
 window.MovieList = MovieList;
