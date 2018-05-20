@@ -1,4 +1,5 @@
 const MovieList = (props) => {
+	console.log('movieList props: ', props.movies);
   return(
 	  <div>
 	  	{props.movies.map((movie, i) => 

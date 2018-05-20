@@ -7,11 +7,13 @@ class App extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			movies: props.movies
+			movies: [],
+			allMovies: []
 		};
 
 		this.getSearchResults = this.getSearchResults.bind(this);
 		this.getAllMovies = this.getAllMovies.bind(this);	
+		this.addMovieToList = this.addMovieToList.bind(this);
 	}
 
 	getSearchResults(query) {
@@ -26,7 +28,13 @@ class App extends React.Component {
 	}
 
 	getAllMovies() {
-		this.setState({movies: this.props.movies})
+		this.setState({movies: this.state.allMovies})
+	}
+
+	addMovieToList(input) {
+		let movies = this.state.movies.concat({title: input});
+		this.state.allMovies = movies;
+		this.setState({movies: movies});
 	}
 
 	render() {
@@ -38,6 +46,8 @@ class App extends React.Component {
 				  onClick={this.getAllMovies}
 				>Home</button>
 				<br/>
+				<br/>
+				<Input handleInput={this.addMovieToList} />
 				<br/>
 				<Search handleSearch={this.getSearchResults} />
 				<br/>

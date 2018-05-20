@@ -7,4 +7,4 @@ var movies = [
   {title: 'Ex Machina'},
 ];
 
-ReactDOM.render(<App movies={movies}/>, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
