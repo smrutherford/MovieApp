@@ -1,11 +1,12 @@
 const MovieList = (props) => {
-	console.log('movieList props: ', props.movies);
   return(
 	  <div>
 	  	{props.movies.map((movie, i) => 
 	  		<Movie 
 	  		  key={i} 
-	  		  movieTitle={movie.title} 
+	  		  movie={movie} 
+	  		  handleWatched={props.handleWatched}
+	  		  removeFromWatched={props.removeFromWatched}
   		  />
   		)}
 	  </div>  	

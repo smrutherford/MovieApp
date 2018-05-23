@@ -20,8 +20,8 @@ class Search extends React.Component {
   }
 
   render () {
-	  return (
-		  <div>
+	  return (	
+		  <div className="search">	  
 			  <form onSubmit={this.handleSubmit}>
 					<input 
 					  type="text" 
@@ -31,10 +31,10 @@ class Search extends React.Component {
 				  />
 					<button type="search">Go!</button>
 				</form>
-		  </div>
+			</div>
 	  );  	
   }
 
-};
+}
 
 window.Search = Search;

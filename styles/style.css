@@ -2,11 +2,7 @@ body {
 	font-family: "Gotham", "Arial", sans-serif;
 	font-weight: lighter;
 	font-variant: small-caps;
-	display: flex;
-	justify-content: center;
-}
-
-h2 {
+	text-align: center;
 	display: flex;
 	justify-content: center;
 }
@@ -17,34 +13,58 @@ input {
 
 button { 
   transition-duration: 0.3s;
+  border-radius: 5px;
 
 }
 
 button:hover {
-	background-color: #4E0A2A;
-	color: white;
+	/*background-color: #CFC7D2;*/
 	border-radius: 5px;
 	cursor: pointer;
 }
 
+img {
+	max-height: 80%;
+	max-width: 80%;
+}
+
 #root {
-	padding: 80px;
+	padding: 20px 80px 80px 80px;
 	border: 3px outset #CFC7D2;
 	border-radius: 10px;
-	background-color: #9AA0A8;
+	background-color: #59A5A5;
 }
 
-.movieTitle {
-	border: 2px #CFC7D2;
+#movie-row {
+	justify-content: space-between;
+}
+
+.app {
+	width: 300px;
+}
+
+.movie-container {
+	border: 2px groove #CFC7D2;
+	border-radius: 5px;
+}
+
+.movie-title {
+	border: 5px #CFC7D2;
 	border-radius: 5px;
 	background-color: #F7FFF6;
+	text-align: center;
+	width: 70%;
+  float: left;
 } 
 
-.home {
-  position: relative;
-  left: 60px;
-  width: 50px; 
+.search {
+	float: right;
 }
+
+
+
+
+
 
 
 
